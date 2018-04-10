@@ -94,11 +94,10 @@ def add_to_cart(melon_id):
     #
     # - check if a "cart" exists in the session, and create one (an empty
     #   dictionary keyed to the string "cart") if not
-    if session['cart']:
+
     # - check if the desired melon id is the cart, and if not, put it in
     # - increment the count for that melon id by 1
-    else:
-        session['cart'] = {}
+
     # - flash a success message
     flash("You have added your melon successfully!")
     # - redirect the user to the cart page
